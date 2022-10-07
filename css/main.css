@@ -18,6 +18,10 @@ img {
 a {
   text-decoration: none;
 }
+
+
+
+
 /* HEADER */
 header {
   background-color: royalblue;
@@ -86,11 +90,27 @@ header .sub-menu ul.menu li a:hover {
 
 
 header .sub-menu .search {
-
+  background-color: red;
+  font-size: 34px;
 }
 
 header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
 
+}
+
+
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #690;
 }
 
 header .sub-menu .search .material-icons-outlined{
