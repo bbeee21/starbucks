@@ -33,3 +33,8 @@
   bottom: 0;
   margin: auto;
 ```
+
+- 수직의 내용들을 수평으로 나열할때 사용하는 코드
+``` css
+display: flex; 
+```
