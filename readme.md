@@ -23,3 +23,13 @@
 
 ## css
 - position: absolute; 사용시 요소의 성질이 block으로 자동으로 바뀜
+
+
+
+## 배치
+- 수직 가운데 배치하기 위해서 사용하는 코드
+''' css
+  top: 0;
+  bottom: 0;
+  margin: auto;
+'''
