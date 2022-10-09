@@ -19,6 +19,7 @@
 - xyzkj 에서 y와 j 알파벳의 경우 베이스라인이 존재하기에 밑에 내용이 채워질 수 있음
 
 - a 태그 : 개발시 클릭했을때 안의 내용이 없는 경우에 아무런 조치도 취하지 않을 경우에 사용
+- inline 요소임
 - javascript:void(0)
 
 ## css
@@ -38,3 +39,27 @@
 ``` css
 display: flex; 
 ```
+
+
+## 가상요소선택자
+- inline요소
+``` css
+header .sub-menu ul.menu li::before
+```
+
+## script defer
+- <script> 태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시
+
+## class 명이 띄어쓰기가 들어가있는 경우
+- classList.add 를 통해서 class를 추가해주는 경우에
+- 기존 클래스명에 새롭게 추가된 클래스명이 추가 됨으로서 길어지는데
+- css 를 통해서 해당 내용에 수정을 가하고 싶을때
+- 일치를 위해서 붙여서 쓰도록 한다 .search.focused
+``` css
+header .sub-menu .search.focused .material-icons-outlined{
+  opacity: 0;
+}
+```
+
+## transition
+- all 이 default임
