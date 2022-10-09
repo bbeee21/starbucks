@@ -27,15 +27,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
-  
+  <!-- Google material icon -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 
 
   <link rel="stylesheet" href="./css/main.css">
   
-
+  <!-- LODASH -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -402,5 +410,52 @@
     </div>
   </section>
 
+
+  <section class="notice">
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">추석 연휴 스타벅스 매장 영업시간 변경 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">홈페이지 / 비회원 이용약관 개정 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">개인정보처리방침 및 영상정보처리기기 운영관리 방침 개정 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">사이렌 오더/딜리버스 음료 기본 설정 변경 안내 (ICED → HOT)</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <div class="material-icons-outlined">add_circle</div>
+          </a>
+        </div>
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons-outlined">file_upload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="promotion">
+      <div class="swiper">test</div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="" alt="">
+            <a href="javascript:void(0)" class="btn">자세히보기</a>
+          </div>
+        </div>
+    </div>
+  </section>
 </body>
 </html>

@@ -78,12 +78,34 @@ header .sub-menu .search.focused .material-icons-outlined{
 - 요소__일부분 : underscore(lodash) 기호로 요소의 일부분을 표시
 - 요소--상태 : Hyphen(Dash) 기호로 요소의 상태를 표시
 
-# lodash cdn
+## lodash cdn
 - scrollY 사용
 
-# gsap cdn
+## gsap cdn
 - js animation
 ```javascript
 gsap.to(요소, 지속시간, 옵션);
 ```
 - gsap -> opacity : 시각적으로만 사라진 것, 마우스 포인터로 클릭이 가능함(문제)
+
+## 정렬
+- justify-content: flex-end; 오른쪽 정렬
+- align-items: center; 글자 수평 수직 가운데로 정렬
+
+## swiper js
+- 6 version vs 8 version
+- current : v8.4.3 
+- hw 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리
+- 7,8 버전의 사용법이 다르기 떄문에 6버전으로 유지
+- 첫번째 div 태그에 swiper-container 라고 시작
+- 공지사항을 슬라이드로 볼 수 있게하기 위해 사용
+- min~ : 원본이 아닌, 최적화된 코드, minify의 약자
+- 자동플레이 및 마지막 요소에서 다시 처음으로 돌아갈 수 있게 하는 방법
+```css
+  autoplay: true,
+  loop: true
+```
+
+## js
+- new
+- 생성자
