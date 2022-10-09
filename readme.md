@@ -63,3 +63,27 @@ header .sub-menu .search.focused .material-icons-outlined{
 
 ## transition
 - all 이 default임
+
+
+## 헤더와 드롭메뉴
+- top이나 bottom 속성을 사용하지 않아 수직 위치 값이 없다면
+- 요소의 원래 위치를 그대로 사용
+- 만약 position: absolute; 를 사용했다면,
+- (위치상) 부모 요소를 기준으로 하므로,
+- 화면의 뷰포트 좌우 끝까지 늘어날 수 없게 됨
+
+## BEM
+- HTML 클래스 속성의 작명법
+- block element modifier
+- 요소__일부분 : underscore(lodash) 기호로 요소의 일부분을 표시
+- 요소--상태 : Hyphen(Dash) 기호로 요소의 상태를 표시
+
+# lodash cdn
+- scrollY 사용
+
+# gsap cdn
+- js animation
+```javascript
+gsap.to(요소, 지속시간, 옵션);
+```
+- gsap -> opacity : 시각적으로만 사라진 것, 마우스 포인터로 클릭이 가능함(문제)
