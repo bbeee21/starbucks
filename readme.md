@@ -87,6 +87,17 @@ header .sub-menu .search.focused .material-icons-outlined{
 gsap.to(요소, 지속시간, 옵션);
 ```
 - gsap -> opacity : 시각적으로만 사라진 것, 마우스 포인터로 클릭이 가능함(문제)
+- gsap easing : esseInOut: power1 으로 요소의 in, out 특성에 맞는 에니메이션 적용하기
+```javascript
+TweenMax.to(
+graph
+graph, 
+2.5
+2.5, { ease: 
+Power1.
+easeInOut
+easeInOut, y: -500 });
+```
 
 ## 정렬
 - justify-content: flex-end; 오른쪽 정렬
@@ -135,3 +146,15 @@ gsap.to(요소, 지속시간, 옵션);
 - 보통 16: 9 의 비율을 맞추려는 경우
 - 56.25 % 를 맞춰주면 된다
 - fhd : 1920 x 1080
+
+
+## 가상요소 선택자 ::
+- .youtube .youtube__area::before 
+- 가상요소 선택자에서 before을 이용하여,
+- 실제 html을 건들지 않고서도, 
+- css로 html 요소의 내용을 수정하는 방법
+
+## youtube iframe api
+- https://developers.google.com/youtube/iframe_api_reference?hl=ko
+- var 요즘 잘 활용하지 않는 요소 생성 방법
+- 요즘엔 let , const
