@@ -5,12 +5,12 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
-  height: 6000px;
+  /* height: 6000px; */
 }
-
+/* 
 .material-icons-outlined {
   font-size : 16px;
-}
+} */
 
 img {
   display : block;
@@ -224,7 +224,7 @@ header .sub-menu .search input:focus {
   border-color: #669900;
 }
 
-header .sub-menu .search .material-icons-outlined{
+header .sub-menu .search .material-icons{
 
   height: 24px;
   position: absolute;
@@ -235,7 +235,7 @@ header .sub-menu .search .material-icons-outlined{
   transition: all .4s;
 }
 
-header .sub-menu .search.focused .material-icons-outlined{
+header .sub-menu .search.focused .material-icons{
   opacity: 0;
 }
 
@@ -479,7 +479,7 @@ header .badges .badge {
   align-items: center;
 }
 
-.notice .notice-line .inner__left .notice-line__more .material-icons-outlined {
+.notice .notice-line .inner__left .notice-line__more .material-icons {
   color: #fff;
   font-size: 30px;
 }
@@ -506,7 +506,7 @@ header .badges .badge {
   align-items: center;
 }
 
-.notice .notice-line .inner__right .toggle-promotion .material-icons-outlined {
+.notice .notice-line .inner__right .toggle-promotion .material-icons {
   font-size: 30px;
 }
 
@@ -912,4 +912,55 @@ background-size: cover;
 
 .find-store .text-group .description {
   margin-bottom: 20px;
+}
+
+/* Awards */
+.awards {
+  background-color: #272727;
+}
+
+.awards .inner {
+  padding: 40px 0;
+}
+
+.awards .swiper-container {
+  width: 100%;
+  height: 40px;
+}
+
+.awards .swiper-prev,
+.awards .swiper-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;  /* 파란색 테두리 안보이기 */
+  color: #fff;
+  opacity: .3;  /* 30% 불투명도 */
+  cursor: pointer;  /* 마우스 커서로 표시 (버튼임을 암시) */
+
+  /* 정중앙에 위치하게 하는 방법 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: .4s;
+}
+
+.awards .swiper-prev {
+  left: -100px;
+}
+
+.awards .swiper-next {
+  right: -100px;
+}
+
+.awards .swiper-prev:hover,
+.awards .swiper-next:hover {
+  background-color: #fff;
+  color: #333;
 }
