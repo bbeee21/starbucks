@@ -158,3 +158,8 @@ easeInOut, y: -500 });
 - https://developers.google.com/youtube/iframe_api_reference?hl=ko
 - var 요즘 잘 활용하지 않는 요소 생성 방법
 - 요즘엔 let , const
+
+# scrollMagic cdn
+- https://nykim.work/30
+- 외부 라이브러리, 스크롤 애니메이션 구현 가능
+- 웹퍼블리싱에서 완성도 높이기 위해,gsap과 함께 많이 사용됨
