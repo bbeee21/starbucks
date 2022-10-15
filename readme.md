@@ -159,26 +159,26 @@ easeInOut, y: -500 });
 - var 요즘 잘 활용하지 않는 요소 생성 방법
 - 요즘엔 let , const
 
-# scrollMagic cdn
+## scrollMagic cdn
 - https://nykim.work/30
 - 외부 라이브러리, 스크롤 애니메이션 구현 가능
 - 웹퍼블리싱에서 완성도 높이기 위해,gsap과 함께 많이 사용됨
 
-# 특수문자
+## 특수문자
 - 표현하는 방법 관련 참고 : https://www.reilldesign.com/tutorials/character-entity-reference-chart.html
 
 
-# img
+## img
 ```css
 display:block;
 margin:0 auto;
 ```
 - 위의 경우에는 width 속성이 없이도 가운데 정렬이 가능
 
-# gsap ScrollToPlugin 
+## gsap ScrollToPlugin 
 - 3.11 버전에서는 window 의 scrollTo 옵션이 정상적으로 작동하지 않음
 - 대신, 3.10 버전으로 실행
 ## 부족한 점
 - awards
--- arrow 버튼 슬라이드 요소 관리 5개 표시만 하고 싶은데 불가
--- 버튼 안보임
+- arrow 버튼 슬라이드 요소 관리 5개 표시만 하고 싶은데 불가
+- 버튼 안보임
