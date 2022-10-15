@@ -18,6 +18,7 @@ searchInputEl.addEventListener('blur', function () {
 });
 
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', _.throttle(function () {
   console.log('scroll!');
@@ -31,6 +32,11 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 0,
       display: 'none'
     });
+
+    // to-top 버튼 보이기
+    gsap.to('toTopEl', .2, {
+      x: 0
+    })
   } else {
     // show badge
     // badgeEl.style.display = 'block';
@@ -38,9 +44,24 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 1,
       display: 'block '
     });
+
+    // to-top 버튼 가리기
+    gsap.to('toTopEl', .2, {
+      x: 100
+    });
+
   }
 }, 300));
 
+// to-top 버튼 클릭시 위로 올라가는 기능
+// const toTopEl = document.querySelector('#to-top');
+toTopEl.addEventListener('click', function () {
+  console.log('toTopEl Clicked');
+
+  gsap.to(window, .7, { // 0.7s 동안
+    scrollTo: 0 // 0px 지점으로 옮기기 
+  });
+});
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
