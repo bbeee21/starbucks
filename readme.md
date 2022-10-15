@@ -1,3 +1,7 @@
+# 👉최종 화면
+https://user-images.githubusercontent.com/85567060/195993825-6ac31903-ab5e-4b1c-9ef2-a50b5af9a204.gif
+
+
 # reset cdn
 - html 파일 초기화 (브라우저별로 다른 스타일 적용되어 있기 때문)
 - 링크 : https://www.jsdelivr.com/package/npm/reset-css
