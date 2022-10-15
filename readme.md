@@ -175,6 +175,9 @@ margin:0 auto;
 ```
 - 위의 경우에는 width 속성이 없이도 가운데 정렬이 가능
 
+# gsap ScrollToPlugin 
+- 3.11 버전에서는 window 의 scrollTo 옵션이 정상적으로 작동하지 않음
+- 대신, 3.10 버전으로 실행
 ## 부족한 점
 - 1. awards
 - arrow 버튼 슬라이드 요소 관리 5개 표시만 하고 싶은데 불가
