@@ -127,6 +127,7 @@ spyEls.forEach(function (spyEl) {
       triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
       triggerHook: .8 // 뷰포트 기준으로 최상단이 0, 최하단이 1임을 인지할 것
     })
-    .setClassToggle()
-    .addTo();
+    .setClassToggle(spyEl, 'show') // scroll 에 의해 class 에서 show 가 추가됨
+    .addTo(new ScrollMagic.Controller()); //내부 컨트롤러 추가 및 동작 가능하게 하기 위함
+    // div 요소와 section 요소 구별 잘하기
 });
