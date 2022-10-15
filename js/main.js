@@ -153,3 +153,6 @@ spyEls.forEach(function (spyEl) {
     .addTo(new ScrollMagic.Controller()); //내부 컨트롤러 추가 및 동작 가능하게 하기 위함
     // div 요소와 section 요소 구별 잘하기
 });
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear(); // 2022
