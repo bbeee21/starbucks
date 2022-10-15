@@ -120,3 +120,13 @@ floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
 
+const spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8 // 뷰포트 기준으로 최상단이 0, 최하단이 1임을 인지할 것
+    })
+    .setClassToggle()
+    .addTo();
+});
