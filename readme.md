@@ -1,5 +1,5 @@
-# 👉최종 화면
-https://user-images.githubusercontent.com/85567060/195993825-6ac31903-ab5e-4b1c-9ef2-a50b5af9a204.gif
+## 👉최종 화면
+![Alt Text](https://user-images.githubusercontent.com/85567060/195993825-6ac31903-ab5e-4b1c-9ef2-a50b5af9a204.gif)
 
 
 # reset cdn
